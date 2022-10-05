@@ -19,6 +19,7 @@
 nav {
   grid-area: nav;
   display: grid;
+  justify-items: center;
 }
 
 /*Header*/
@@ -31,6 +32,24 @@ header {
 
 .header-top {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 /*Main*/
