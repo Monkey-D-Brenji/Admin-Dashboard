@@ -10,6 +10,15 @@
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  border: none;
+  background-color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 6fr;
@@ -64,6 +73,8 @@ header {
 
 .header-top1 {
   justify-self: start;
+  display: flex;
+  gap: 20px;
 }
 
 .header-bottom {
