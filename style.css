@@ -58,6 +58,12 @@ header {
   grid-auto-flow: column;
   align-items: center;
   justify-items: center;
+  gap: 50px;
+  padding: 0 50px;
+}
+
+.header-top1 {
+  justify-self: start;
 }
 
 .header-bottom {
@@ -66,6 +72,8 @@ header {
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
+  gap: 50px;
+  padding: 0 50px;
 }
 
 .username {
@@ -76,6 +84,7 @@ header {
 
 .username-container {
   display: flex;
+  justify-self: start;
 }
 
 .search {
@@ -114,7 +123,7 @@ main {
 
 .main-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 25px;
   height: 100%;
 }
@@ -130,6 +139,12 @@ main {
 }
 
 .project-cards {
-  padding: 20px;
+  padding: 50px;
   background-color: var(--white-background);
+}
+
+.main1 > h2,
+.main2 > h2,
+.main3 > h3 {
+  padding: 25px;
 }
