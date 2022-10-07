@@ -1,3 +1,9 @@
+:root {
+  --white-background: #fafafa;
+  --blue-background: #38bdf8;
+  --gray-background: #e5e5e5;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,10 +26,22 @@ nav {
   grid-area: nav;
   display: grid;
   justify-items: center;
+  background-color: var(--blue-background);
 }
 
 li {
   list-style-type: none;
+  padding: 10px;
+}
+
+.nav1 {
+  margin-top: 25px;
+  font-size: 1.5rem;
+}
+
+.nav3 {
+  align-self: end;
+  padding-bottom: 15px;
 }
 
 /*Header*/
@@ -60,6 +78,11 @@ header {
   display: flex;
 }
 
+.search {
+  border: none;
+  background-color: var(--white-background);
+}
+
 /*Main*/
 
 main {
@@ -70,6 +93,7 @@ main {
     "main1 main2"
     "main1 main3";
   overflow: auto;
+  background-color: var(--gray-background);
 }
 
 .main1 {
@@ -84,10 +108,15 @@ main {
   grid-area: main3;
 }
 
+.project-container {
+  padding: 25px;
+}
+
 .main-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
+  height: 100%;
 }
 
 .main-announcements {
@@ -102,4 +131,5 @@ main {
 
 .project-cards {
   padding: 20px;
+  background-color: var(--white-background);
 }
