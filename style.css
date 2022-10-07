@@ -52,10 +52,29 @@ header {
   gap: 3px;
 }
 
+.username-container {
+  display: flex;
+}
+
 /*Main*/
 
 main {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "1 2"
+    "1 3";
+}
+
+.main1 {
+  grid-area: 1;
+}
+
+.main2 {
+  grid-area: 2;
+}
+
+.main3 {
+  grid-area: 3;
 }
