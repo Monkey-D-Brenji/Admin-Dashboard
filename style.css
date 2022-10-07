@@ -77,6 +77,18 @@ header {
   gap: 20px;
 }
 
+.header-top1,
+input {
+  width: max(200px, 100%);
+}
+
+input {
+  background-color: var(--gray-background);
+  border-radius: 15px;
+  border: none;
+  padding: 8px;
+}
+
 .header-bottom {
   display: grid;
   grid-auto-flow: column;
