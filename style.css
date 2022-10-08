@@ -184,7 +184,7 @@ main {
 .main-projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 25px;
+  gap: 35px;
   height: 100%;
 }
 
@@ -208,6 +208,7 @@ main {
 
 .project-cards {
   padding: 50px;
+  border-radius: 15px;
 }
 
 .announcement-cards {
@@ -228,4 +229,11 @@ h2 {
 h3 {
   font-size: 1rem;
   padding-bottom: 10px;
+}
+
+.announcement-card-top,
+.announcement-card-bottom,
+.trending-card-top,
+.trending-card-bottom {
+  border-radius: 15px;
 }
