@@ -191,6 +191,8 @@ main {
 .main-announcements {
   display: grid;
   grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  padding: 10px 30px;
 }
 
 .main-trending {
@@ -198,13 +200,32 @@ main {
   grid-template-columns: 1fr;
 }
 
+.project-cards,
+.announcement-cards,
+.trending-cards {
+  background-color: var(--white-background);
+}
+
 .project-cards {
   padding: 50px;
-  background-color: var(--white-background);
+}
+
+.announcement-cards {
+  padding: 20px;
+  font-size: 0.8rem;
 }
 
 .main1 > h2,
 .main2 > h2,
 .main3 > h3 {
   padding: 25px;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1rem;
+  padding-bottom: 10px;
 }
