@@ -10,6 +10,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+:link,
 button {
   border: none;
   background-color: white;
@@ -69,12 +70,17 @@ header {
   justify-items: center;
   gap: 50px;
   padding: 0 50px;
+  padding-top: 15px;
 }
 
 .header-top1 {
   justify-self: start;
   display: flex;
   gap: 20px;
+}
+
+.header-top-name {
+  font-weight: bold;
 }
 
 .header-top1,
@@ -108,6 +114,25 @@ input {
 .username-container {
   display: flex;
   justify-self: start;
+  gap: 25px;
+  font-weight: bold;
+}
+
+.username-top {
+  font-size: 0.8rem;
+}
+
+.username-bottom {
+  font-size: 1.5rem;
+}
+
+.header-bottom-buttons {
+  background-color: var(--blue-background);
+  color: var(--white-background);
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .search {
