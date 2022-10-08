@@ -232,8 +232,17 @@ h3 {
 }
 
 .announcement-card-top,
+.trending-card-top {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
 .announcement-card-bottom,
-.trending-card-top,
 .trending-card-bottom {
-  border-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.project-cards {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.123);
 }
