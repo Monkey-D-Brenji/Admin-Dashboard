@@ -10,6 +10,14 @@
   font-family: "Roboto", sans-serif;
 }
 
+a,
+li {
+  color: inherit;
+  background-color: var(--blue-background);
+  text-decoration: none;
+  font-weight: bold;
+}
+
 :link,
 button {
   border: none;
@@ -37,6 +45,8 @@ nav {
   display: grid;
   justify-items: center;
   background-color: var(--blue-background);
+  color: var(--white-background);
+  font-size: 1.3rem;
 }
 
 li {
@@ -45,13 +55,15 @@ li {
 }
 
 .nav1 {
-  margin-top: 25px;
-  font-size: 1.5rem;
+  padding-top: 50px;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .nav3 {
   align-self: end;
   padding-bottom: 15px;
+  padding-right: 15px;
 }
 
 /*Header*/
